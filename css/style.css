@@ -1,0 +1,457 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: #f6f9f9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #2d3950;
+    font-family: lato;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    text-align: center;
+}
+
+.hg {
+    min-height: 87vh;
+}
+
+.banner h1 {
+
+    font-size: 100px;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    font-family: lato;
+
+    font-weight: 600;
+}
+
+.banner span {
+    background: #15a4fa;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+
+.banner p {
+
+    font-size: 18px;
+
+    color: #fff;
+
+    font-family: lato;
+
+    margin: 10px 0%;
+}
+
+.btn-custom {
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: 1px solid #15a4fa;
+    transition: .6s;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-custom:hover {
+    background: #15a4fa;
+    color: #fff;
+}
+
+.icon {
+    animation: up-down 1s infinite linear;
+    animation-direction: alternate;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+}
+
+.icon i {
+    color: #fff;
+    font-size: 22px;
+
+}
+
+@keyframes up-down {
+    0% {
+        top: 78%;
+    }
+
+    100% {
+        top: 93%;
+    }
+}
+
+.simple {
+
+    background-color: #f6f9f9;
+
+    text-align: center;
+
+    padding: 42px;
+}
+
+.simple h1 {
+
+    color: #2d3950;
+
+    font-size: 37px;
+
+    font-family: lato;
+
+    margin-bottom: 21px;
+}
+
+.simple p {
+
+    color: #999999;
+
+    font-size: 17px;
+
+    font-family: lato;
+}
+
+.symbol i {
+
+    font-size: 24px;
+
+    color: #fff;
+
+    border: 1px solid;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+    /* IE6-9 */
+
+
+    width: 70px;
+
+    height: 70px;
+
+    text-align: center;
+
+    line-height: 70px;
+}
+
+.symbol h1 {
+
+    font-size: 25px;
+
+    color: #2d3950;
+
+    font-family: lato;
+
+    margin-bottom: 20px;
+
+    margin-top: 20px;
+}
+
+.symbol p {
+    font-size: 17px;
+    font-family: lato;
+    color: #999999;
+}
+
+.text_div {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.text_div h1 {
+
+    font-size: 40px;
+
+    font-family: lato;
+
+    color: #2d3950;
+
+    margin-bottom: 12px;
+}
+
+.text_div p {
+
+    font-size: 17px;
+
+    font-family: lato;
+
+    color: #909090;
+}
+
+
+.image {
+    position: relative;
+    margin-bottom: 20px;
+
+
+}
+
+.image img {
+
+    display: block;
+
+}
+
+.image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0%;
+    background-color: #2cadfa;
+    opacity: .5;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.image:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-div {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+.icon-div i {
+
+    color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 3px;
+    width: 40px;
+
+    height: 40px;
+
+    line-height: 40px;
+
+    text-align: center;
+
+    margin-right: 5px;
+
+}
+
+.image:hover .icon-div {
+    opacity: 1;
+
+}
+
+.icon-div i:hover {
+    background-color: #2d3950;
+}
+
+.login {
+    background: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    z-index: 0;
+}
+
+.login::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333e52;
+    opacity: .7;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.login h1 {
+
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 40px;
+
+    text-transform: capitalize;
+
+    margin-bottom: 10px;
+
+    font-family: lato;
+}
+
+.login p {
+
+    text-align: center;
+
+    font-size: 16px;
+
+    margin-bottom: 40px;
+
+    color: #999999;
+
+    font-family: lato;
+}
+
+.login form {}
+
+.login form input {
+    outline: none;
+    background: transparent;
+}
+
+.login form textarea {
+    outline: none;
+    background: transparent;
+}
+
+.send {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.checkbox {
+
+    display: flex;
+
+    width: 70%;
+
+    align-items: center;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox p {
+    color: #fff;
+    margin: 0;
+}
+
+.submit {
+    position: relative;
+}
+
+.submit input {
+    padding: 6px 25px;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #15a4fa;
+
+}
+
+.submit::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+
+    transition: .4s;
+}
+
+.submit input:hover {
+    background: #2cadfa;
+}
+
+.login form input:focus {
+    background-color: transparent;
+}
+.login form textarea:focus{
+    background-color: transparent;
+}
+
+.footer {}
+
+.written {}
+
+.written p {
+    color: #999999;
+    margin: 0;
+    font-size: 16px;
+}
+
+.link {}
+
+.link ul {
+
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: end;
+}
+
+.link ul li {
+    height: 35px;
+    width: 35px;
+    background-color: #15a4fa;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+}
+
+.link ul li a {
+
+    text-decoration: none;
+
+    color: #fff;
+}
+.link ul::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    cursor: pointer;
+    transition: .4s;
+}
+.link ul li:hover{
+background-color: #333e52;
+}
